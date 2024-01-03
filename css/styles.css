@@ -1,0 +1,21 @@
+body,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+/* header */
+.headerContainer {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  margin-left: 100px;
+}
+.navList {
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
