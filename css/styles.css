@@ -111,12 +111,8 @@ section {
 }
 
 table {
-  /* border-collapse: collapse; */
-  /* border-spacing: 0; */
+  width: 100%;
   border-color: #edecf4;
-  /* background-color: #d9e0f3; #f5f4fa#D9E0F3 #F4F5FA
-  color: #364a9c; #354D8B
-  border-color: #e7e9ee; #EDECF4 */
   background-color: #cbd0e4;
   margin: 15px 0;
 }
@@ -146,4 +142,57 @@ td {
 tr:nth-child(n + 3):nth-child(-n + 9) td {
   text-align: center;
   vertical-align: middle;
+}
+
+.step {
+  display: flex;
+  gap: 30px;
+  align-items: baseline;
+}
+.period {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step {
+  margin-top: 20px;
+}
+.stepTitle {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.step h4 {
+  padding: 20px 0 20px 0;
+  text-align: start;
+}
+.stepDecoration {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.stepDecoration li {
+  position: relative;
+  margin-top: 10px;
+  padding: 10px 0;
+}
+.stepDecoration li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #000;
+}
+
+.features li {
+  margin-left: 40px;
+}
+
+.lastWord {
+  text-align: center;
 }
