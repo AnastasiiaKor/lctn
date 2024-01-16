@@ -4,6 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lockton One</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -25,7 +38,7 @@
       </div>
     </header>
     <main>
-      <div class="comainContainer">
+      <div class="container">
         <h2>Welcome to Lockton One</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, qui
@@ -44,7 +57,7 @@
         <div class="whsection">
           <h1 id="whHeader">
             Lockton One: Between Freedom and Regulation <br />
-            or <br />
+            <span class="headerSpan">or</span><br />
             How to reach consensus in the blockchain industry?
           </h1>
           <h2>Table of contents</h2>
@@ -107,22 +120,32 @@
             <li><a href="#hood18">Analytics</a></li>
           </ul>
           <p><a href="#sum">Summary</a></p>
-          <p><a href="">Additional protocol improvements</a></p>
+          <p><a href="#addProtocol">Additional protocol improvements</a></p>
           <ul>
-            <li><a href="">Iden3 as identity infrastructure core</a></li>
-            <li><a href="">WebAssembly Virtual Machine</a></li>
-            <li><a href="">Privacy pools</a></li>
-            <li><a href="">DAO & Voting construction framework</a></li>
             <li>
-              <a href="">Retrieving sensitive data with zero knowledge</a>
+              <a href="#addProtocol1">Iden3 as identity infrastructure core</a>
             </li>
-            <li><a href="">Shared sequencer</a></li>
-            <li><a href="">Application-specific rollup constructor</a></li>
+            <li><a href="#addProtocol2">WebAssembly Virtual Machine</a></li>
+            <li><a href="#addProtocol3">Privacy pools</a></li>
+            <li>
+              <a href="#addProtocol4">DAO & Voting construction framework</a>
+            </li>
+            <li>
+              <a href="#addProtocol5"
+                >Retrieving sensitive data with zero knowledge</a
+              >
+            </li>
+            <li><a href="#addProtocol6">Shared sequencer</a></li>
+            <li>
+              <a href="#addProtocol7"
+                >Application-specific rollup constructor</a
+              >
+            </li>
           </ul>
-          <p><a href="">DAPPSTORE</a></p>
+          <p><a href="#dapp">DAPPSTORE</a></p>
           <section class="intoPar">
             <h2 id="introduction">Introduction</h2>
-            <p>
+            <p class="subTitle">
               <em
                 >The amount of funds stolen from blockchain platforms in 2022 is
                 approximately $2.5 billion</em
@@ -139,7 +162,9 @@
               innovative progress, new challenges and issues arise, demanding
               solutions.
             </p>
-            <img src="" alt="" />
+            <div class="thumb">
+              <img src="./images/1.png" alt="zero_knowledge" />
+            </div>
             <p>
               Fraud schemes exploiting the complexities of blockchain regulation
               are becoming more sophisticated and challenging to overcome. As a
@@ -195,7 +220,7 @@
             <h3 id="intr1">
               From the Past to the Future - Regulatory Challenges
             </h3>
-            <p>
+            <p class="subTitle">
               <em
                 >The OneCoin project gathered over 4 billion dollars and turned
                 into fraud… The North Korean hacking group Lazarus Group used
@@ -214,8 +239,8 @@
               integration into the world, there are already significant problems
               that require serious attention and effective regulation.
             </p>
-            <p>
-              <b><em>ICO Problem: Litmus Test for Fraud</em></b>
+            <p class="subTitle">
+              <em>ICO Problem: Litmus Test for Fraud</em>
             </p>
             <p>
               The approach to Initial Coin Offering (ICO), despite its
@@ -228,8 +253,8 @@
               learned from bitter experience, lump everything related to
               "crypto" under one brush.
             </p>
-            <p>
-              <b><em>Lack of Consumer Protection and Taxation Threats</em></b>
+            <p class="subTitle">
+              <em>Lack of Consumer Protection and Taxation Threats</em>
             </p>
             <p>
               Blockchain technology provides anonymity (more precisely -
@@ -262,7 +287,8 @@
               regulatory screws, increasing the cost of entry for new solutions
               to enter the market.
             </p>
-            <img src="" alt="" />
+            <div class="thumb"><img src="./images/2.png" alt="train" /></div>
+
             <p>
               However, the cryptocurrency market can become an excellent tool
               for expanding the possibilities of the traditional financial
@@ -292,7 +318,7 @@
               to engage with the regulated segment can continue to leverage the
               properties of decentralized systems, as before.
             </p>
-            <p>
+            <p class="subTitle">
               <em
                 >The ideal market for an entrepreneur is not a realm of anything
                 but rather a consolidating platform where decentralization and
@@ -301,7 +327,7 @@
               >
             </p>
             <h3 id="intr3">Mint</h3>
-            <p>
+            <p class="subTitle">
               <em
                 >On January 1, 2023, there were 22,157 digital assets on the
                 cryptocurrency market, and its global market capitalization
@@ -315,8 +341,8 @@
               the context of increasing interest in digital assets from the
               general public and businesses.
             </p>
-            <img src="" alt="" />
-            <p>
+            <div class="thumb"><img src="./images/3.png" alt="bank" /></div>
+            <p class="subTitle">
               <em
                 >Many individuals entrust their digital assets to a bank, and
                 the bank is responsible for ensuring the security of these
@@ -366,7 +392,7 @@
               threat to economic stability and possibly as unlawful activity.
             </p>
             <h3 id="intr4">Quality is more important than quantity</h3>
-            <p>
+            <p class="subTitle">
               <em
                 >In some blockchain networks, such as Ethereum 2.0, validators
                 must stake cryptocurrency. This incentivizes validators to act
@@ -406,7 +432,7 @@
               throughput.
             </p>
             <h3 id="intr5">Rollups as a way to scale</h3>
-            <p>
+            <p class="subTitle">
               <em
                 >As of December 27, 2023, over 30 second-layer solutions are
                 utilizing Rollup technologies.</em
@@ -478,7 +504,7 @@
               final state of the rollup can be verified by any participant in
               the network.
             </p>
-            <img src="" alt="" />
+            <div class="thumb"><img src="./images/4.png" alt="schema" /></div>
             <p>
               The key advantage of zk-rollups is their ability to process a
               large number of transactions off the main chain, followed by the
@@ -503,7 +529,7 @@
               make zero-knowledge proofs compatible with the full functionality
               of the EVM, including all OP codes.
             </p>
-            <img src="" alt="" />
+            <div class="thumb"><img src="./images/5.png" alt="rollups" /></div>
             <p>Why it matters:</p>
             <ol>
               <li>
@@ -542,7 +568,7 @@
               ecosystems.
             </p>
             <h3 id="intr6">Possibilities</h3>
-            <p>
+            <p class="subTitle">
               <em
                 >According to a study conducted by McKinsey, improperly
                 formulated system requirements are the cause of failure in
@@ -554,7 +580,9 @@
               formulate system requirements that contribute to their resolution,
               then we will have a clearly outlined list of criteria.
             </p>
-            <img src="" alt="" />
+            <div class="thumb">
+              <img src="./images/6.png" alt="possibilities" />
+            </div>
             <ul>
               <li>
                 <strong> Transparency and Privacy:</strong> the system should
@@ -669,11 +697,16 @@
               Based on these criteria, we can envision what the formula of the
               technical architecture of the platform will look like:
             </p>
-            <p>
-              QBFT+MIDDLEWARE+Institutional_validators+EVM+ZkEvm+WrapGate+
-              PHISHERS+ONCHAIN_KYC +OPEN_SOURCE=Lockton one
-            </p>
-            <img src="" alt="" />
+            <div class="formulaCont">
+              <p class="formula">
+                <strong>
+                  QBFT+MIDDLEWARE+Institutional_validators+EVM+ZkEvm+WrapGate+<br />
+                  PHISHERS+ONCHAIN_KYC+OPEN_SOURCE=Lockton one</strong
+                >
+              </p>
+            </div>
+
+            <div class="thumb"><img src="./images/7.png" alt="lockton" /></div>
             <p>where:</p>
             <ul>
               <li>
@@ -733,7 +766,7 @@
           </section>
           <section id="hoodPar">
             <h2 id="hoodPar">Under the hood</h2>
-            <p>
+            <p class="subTitle">
               <em
                 >Lockton One is an innovative platform currently in development,
                 offering the opportunity to efficiently implement and deploy
@@ -755,7 +788,9 @@
               One is actively in development, striving to create an advanced
               solution for the financial environment.
             </p>
-            <img src="" alt="" />
+            <div class="thumb">
+              <img src="./images/8.png" alt="lockton_train" />
+            </div>
             <p>
               Lockton One facilitates the interaction of financial institutions
               in the digital asset space without intermediaries. The platform
@@ -797,14 +832,16 @@
               </li>
             </ul>
             <h3 id="hood1">Lockton One Architecture</h3>
-            <p>
+            <p class="subTitle">
               <em
                 >According to a study conducted by McKinsey, investments in
                 system architecture can lead to a 10-20% increase in
                 efficiency.</em
               >
             </p>
-            <img src="" alt="" />
+            <div class="thumb">
+              <img src="./images/9.png" alt="Lockton_One_Architecture" />
+            </div>
             <p>
               At the physical level, Lockton One consists of a group of
               specialized computers called validator nodes that interact with
@@ -863,7 +900,9 @@
                 of arbitrary complex account management logic.
               </li>
             </ul>
-            <img src="" alt="" />
+            <div class="thumb">
+              <img src="./images/9.png" alt="Account abstraction" />
+            </div>
             <h4 id="hoodlow1">Account abstraction</h4>
             <p>Use Cases (why it’s needed):</p>
             <ul>
@@ -904,7 +943,9 @@
               protocol.
             </p>
             <p>Future improvements version:</p>
-            <img src="" alt="" />
+            <div class="thumb">
+              <img src="./images/11.png" alt="future improvements" />
+            </div>
             <p>
               Advanced architecture is designed to show the goal of future
               development and subsequent releases:
@@ -968,7 +1009,9 @@
               view requests to prevent DOS attacks, while auditor nodes will
               keep a copy of the system state, executing complex view queries.
             </p>
-            <img src="" alt="" />
+            <div class="thumb">
+              <img src="./images/12.png" alt="bitcoin schema" />
+            </div>
             <p>
               <em
                 >Early stages: 100-500 TPS<br />
@@ -995,7 +1038,9 @@
               reaching, state updates, etc. Auditor nodes will synchronize with
               the network state using the same peer-to-peer protocol.
             </p>
-            <img src="" alt="" />
+            <div class="thumb">
+              <img src="./images/13.png" alt="protocol" />
+            </div>
             <h3 id="hood5">Smart contract supporting</h3>
             <p>
               The Lockton One protocol is based on a modified version of Geth
@@ -1051,7 +1096,9 @@
               with strong credentials, and access to sensitive data and
               functions should be restricted to authorized users and nodes.
             </p>
-            <img src="" alt="" />
+            <div class="thumb">
+              <img src="./images/14.png" alt="protection methods" />
+            </div>
             <p>
               DOS-protection mechanisms (IP blacklisting/whitelisting, request
               rate limitation, backup nodes usage) should be implemented to
@@ -1095,7 +1142,9 @@
               blockchains - immutability, verifiability, and traceability of
               data.
             </p>
-            <img src="" alt="" />
+            <div class="thumb">
+              <img src="./images/15.png" alt="consensus mechanism" />
+            </div>
             <p>
               Consensus algorithms based on BFT can scale to a significant
               number of nodes without compromising performance and security.
@@ -1143,7 +1192,9 @@
               <li>Taxes roles (legal entity, individual)</li>
               <li>Other</li>
             </ul>
-            <img src="" alt="" />
+            <div class="thumb">
+              <img src="./images/16.png" alt="lockton network" />
+            </div>
             <h3 id="hood11">Supported Asset Types in the System</h3>
             <p>
               The default system asset is Computation Credits, primarily
@@ -1178,7 +1229,9 @@
               application-specific rollups without losing security.
             </p>
             <h3 id="hood13">Used cryptographic mechanisms</h3>
-            <img src="" alt="" />
+            <div class="thumb">
+              <img src="./images/17.png" alt="cryptographic mechanisms" />
+            </div>
             <p>
               Base cryptographic mechanisms are the same as in the Ethereum:
             </p>
@@ -1294,7 +1347,9 @@
               data, is that the user should have instruments to make claims
               about that data without disclosing it.
             </p>
-            <img src="" alt="" />
+            <div class="thumb">
+              <img src="./images/18.png" alt="sensitive data" />
+            </div>
             <p>
               This also includes use cases with privacy-oriented applications
               (like banks) that will process data in a roll-up mode and only
@@ -1344,10 +1399,10 @@
               Lockton One project.
             </p>
             <h3 id="hood18">Analytics</h3>
-            <table border="1">
+            <table>
               <thead>
                 <tr>
-                  <th>Platform</th>
+                  <th class="headcolumn">Platform</th>
                   <th>R3 Corda</th>
                   <th>we.trade</th>
                   <th>XPR</th>
@@ -1357,7 +1412,7 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>Description</td>
+                  <td class="headcolumn">Description</td>
                   <td>
                     An open-source blockchain platform designed for financial
                     services companies.
@@ -1377,7 +1432,7 @@
                   </td>
                 </tr>
                 <tr>
-                  <td>Key features</td>
+                  <td class="headcolumn">Key features</td>
                   <td>
                     Uses a unique consensus mechanism called "Notary Cluster" to
                     validate transactions. Offers a high degree of privacy and
@@ -1411,7 +1466,7 @@
                   </td>
                 </tr>
                 <tr>
-                  <td>Consensus mechanism</td>
+                  <td class="headcolumn">Consensus mechanism</td>
                   <td>Single notary, Raft, BFT-SMaRt</td>
                   <td>Hyperledger Fabric consensus</td>
                   <td>Ripple Protocol Consensus Algorithm</td>
@@ -1419,7 +1474,7 @@
                   <td>QBFT</td>
                 </tr>
                 <tr>
-                  <td>Privacy/Security</td>
+                  <td class="headcolumn">Privacy/Security</td>
                   <td><strong>High</strong></td>
                   <td><strong>High</strong></td>
                   <td>Average</td>
@@ -1427,7 +1482,7 @@
                   <td><strong>High</strong></td>
                 </tr>
                 <tr>
-                  <td>Modularity</td>
+                  <td class="headcolumn">Modularity</td>
                   <td><strong>High</strong></td>
                   <td>N/A</td>
                   <td>N/A</td>
@@ -1435,7 +1490,7 @@
                   <td><strong>High</strong></td>
                 </tr>
                 <tr>
-                  <td>Trade Finance capabilities</td>
+                  <td class="headcolumn">Trade Finance capabilities</td>
                   <td>N/A</td>
                   <td><strong>Yes</strong></td>
                   <td>N/A</td>
@@ -1443,7 +1498,7 @@
                   <td><strong>Yes</strong></td>
                 </tr>
                 <tr>
-                  <td>Cross border payments capabilities</td>
+                  <td class="headcolumn">Cross border payments capabilities</td>
                   <td>N/A</td>
                   <td>N/A</td>
                   <td>Average</td>
@@ -1451,7 +1506,7 @@
                   <td><strong>High</strong></td>
                 </tr>
                 <tr>
-                  <td>Smart contracts</td>
+                  <td class="headcolumn">Smart contracts</td>
                   <td>N/A</td>
                   <td>N/A</td>
                   <td>N/A</td>
@@ -1459,7 +1514,7 @@
                   <td><strong>Yes</strong></td>
                 </tr>
                 <tr>
-                  <td>Decentralized exchange</td>
+                  <td class="headcolumn">Decentralized exchange</td>
                   <td>N/A</td>
                   <td>N/A</td>
                   <td>N/A</td>
@@ -1554,7 +1609,7 @@
             </p>
           </section>
           <section>
-            <h3 id="add">Additional protocol improvements</h3>
+            <h3 id="addProtocol">Additional protocol improvements</h3>
             <p>
               Some system components are essential and/or required for the
               system to be operational. They must be implemented in the first
@@ -1569,13 +1624,13 @@
               <li>Legal dApp store;</li>
               <li>Account abstraction;</li>
             </ul>
-            <p>
+            <p class="subTitle">
               <em
                 >Other components can be added to the system later in subsequent
                 releases.
               </em>
             </p>
-            <h4 id="add1">Iden3 as identity infrastructure core</h4>
+            <h4 id="addProtocol1">Iden3 as identity infrastructure core</h4>
             <p>
               Iden3 is the protocol that allows the implementation of
               self-sovereign identity (it means that identity can issue claims
@@ -1600,7 +1655,7 @@
                 feedback is indeed from the user that has purchased this item.
               </li>
             </ul>
-            <h4 id="add2">WebAssembly Virtual Machine</h4>
+            <h4 id="addProtocol2">WebAssembly Virtual Machine</h4>
             <p>Use case:</p>
             <ul>
               <li>
@@ -1618,7 +1673,7 @@
               executed on a parallel VM. This allows smooth integration for
               computational-intensive business logic.
             </p>
-            <h4 id="add3">Privacy pools</h4>
+            <h4 id="addProtocol3">Privacy pools</h4>
             <p>
               As data on the Lockton One core can be accessed by many parties
               (like applications), this might impose privacy issues. Privacy
@@ -1637,7 +1692,7 @@
               more difficult to track down users' action history by other
               parties.
             </p>
-            <h4 id="add4">DAO & Voting construction framework</h4>
+            <h4 id="addProtocol4">DAO & Voting construction framework</h4>
             <p>Use Cases:</p>
             <ul>
               <li>
@@ -1655,7 +1710,9 @@
                 city have the right to vote.
               </li>
             </ul>
-            <img src="" alt="" />
+            <div class="thumb">
+              <img src="./images/19.png" alt="DAO and voting" />
+            </div>
             <p>
               Such use cases can be solved with the DAO & Voting construction
               framework, which will act as a constructor when designing systems
@@ -1663,7 +1720,9 @@
               built-in smart contracts and zero-knowledge proof schemes that
               users can configure for their specific needs.
             </p>
-            <h4 id="add5">Retrieving sensitive data with zero knowledge</h4>
+            <h4 id="addProtocol5">
+              Retrieving sensitive data with zero knowledge
+            </h4>
             <p>(additional research is required)</p>
             <p>
               This module will allow making statements about sensitive data
@@ -1680,8 +1739,10 @@
                 value.
               </li>
             </ul>
-            <img src="" alt="" />
-            <h4 id="add6">Shared sequencer</h4>
+            <div class="thumb">
+              <img src="./images/20.png" alt="zero-knowledge" />
+            </div>
+            <h4 id="addProtocol6">Shared sequencer</h4>
             <p>(additional research is required)</p>
             <p>
               A shared sequencer can handle atomic cross-rollup operations (when
@@ -1712,8 +1773,10 @@
                 to execute transactions on both rollups atomically.
               </li>
             </ul>
-            <img src="" alt="" />
-            <h4 id="add7">Application-specific rollup constructor</h4>
+            <div class="thumb">
+              <img src="./images/21.png" alt="rollup transaction" />
+            </div>
+            <h4 id="addProtocol7">Application-specific rollup constructor</h4>
             <p>(additional research is required)</p>
             <p>
               Rollups based on zero-knowledge proofs are required to provide
@@ -1724,7 +1787,9 @@
               why those rollups must be constructed from predefined building
               blocks that are approved by the authorities.
             </p>
-            <img src="" alt="" />
+            <div class="thumb">
+              <img src="./images/22.png" alt="rollup constructor" />
+            </div>
             <section class="roadmap">
               <div class="step">
                 <span><em>q1</em></span>
@@ -1932,7 +1997,7 @@
               </div>
             </section>
           </section>
-          <section id="dappstore">
+          <section id="dapp">
             <h2 id="dapp">DAPPSTORE</h2>
             <ul>
               <li><img src="" alt="" /></li>

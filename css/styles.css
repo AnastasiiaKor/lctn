@@ -1,8 +1,50 @@
-body,
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
 h1,
-p {
+ul,
+h2,
+h3,
+h4,
+p,
+ol {
   margin: 0;
   padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+}
+
+h1,
+h2 {
+  padding: 30px 0;
+}
+
+h3,
+h4 {
+  padding: 20px 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container,
+.headerContainer {
+  max-width: 1440px;
+  min-width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 /* header */
 .headerContainer {
@@ -18,4 +60,90 @@ p {
   display: flex;
   gap: 20px;
   list-style: none;
+}
+
+/* main */
+
+/* whitepaper */
+section {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.whsection {
+  font-family: "EB Garamond", serif;
+  font-size: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.whsection p {
+  padding: 10px 0;
+}
+
+#whHeader {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.headerSpan {
+  font-size: 18px;
+}
+.thumb {
+  display: flex;
+  justify-content: center;
+  max-width: 900px;
+  min-width: 300px;
+  height: auto;
+  margin: 10px auto;
+}
+
+.subTitle {
+  text-align: center;
+}
+
+.formulaCont {
+  margin: 10px auto;
+  width: 100%;
+  padding: 30px 0;
+  border-bottom: 1px solid grey;
+  border-top: 1px solid grey;
+  text-align: center;
+}
+
+table {
+  /* border-collapse: collapse; */
+  /* border-spacing: 0; */
+  border-color: #edecf4;
+  /* background-color: #d9e0f3; #f5f4fa#D9E0F3 #F4F5FA
+  color: #364a9c; #354D8B
+  border-color: #e7e9ee; #EDECF4 */
+  background-color: #cbd0e4;
+  margin: 15px 0;
+}
+th {
+  border: 1px solid #cbd0e4;
+  padding: 25px 0;
+  background-color: #f5f4fc;
+  color: #354d8b;
+}
+td {
+  border: 1px solid #cbd0e4;
+  padding: 5px 0;
+  background-color: #fff;
+  padding: 5px;
+  width: calc(100% / 6);
+  vertical-align: top;
+}
+.headcolumn {
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 600;
+  color: #354d8b;
+  background-color: #d9e0f3;
+  padding: 20px 20px;
+}
+
+tr:nth-child(n + 3):nth-child(-n + 9) td {
+  text-align: center;
+  vertical-align: middle;
 }
