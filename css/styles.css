@@ -54,7 +54,11 @@ img {
   padding: 0 96px;
   margin: 0 auto;
 }
-
+@media screen and (min-width: 750px) {
+  .element {
+    padding: 20px;
+  }
+}
 /* header */
 .headerContainer {
   display: flex;
