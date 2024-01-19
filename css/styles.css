@@ -307,17 +307,25 @@ tr:nth-child(n + 3):nth-child(-n + 9) td {
 .dapplist {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
   gap: 20px;
+  flex-direction: column;
 }
 
 .dapplist li {
   margin-left: 0;
-  width: 300px;
+  width: 100%;
 }
 
-.dapplist li img {
-  width: 100%;
+@media screen and (min-width: 751px) {
+  .dapplist {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+  }
+  .dapplist li {
+    width: calc((100% - 20px) / 2);
+  }
 }
 
 .footer {
