@@ -333,9 +333,8 @@ tr:nth-child(n + 3):nth-child(-n + 9) td {
   padding-bottom: 20px;
   background-color: #f4f7ff;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   color: #8a9aac;
   font-size: 14px;
   text-align: center;
@@ -354,4 +353,8 @@ tr:nth-child(n + 3):nth-child(-n + 9) td {
 .logo_footer {
   fill: #8590b2;
   height: 32px;
+}
+
+.partner {
+  font-weight: 600;
 }
